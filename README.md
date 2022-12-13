@@ -1,2 +1,0 @@
-# mobile-shoppy
-mobile-shoppy
