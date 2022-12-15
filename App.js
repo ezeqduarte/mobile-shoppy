@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import HomeScreen from './src/Screens/Home';
+
 import { NativeBaseProvider, Box, Text} from "native-base"
 import LoginScreen from './src/Screens/LoginScreen';
 import RegisterScreen from './src/Screens/RegisterScreen';

@@ -8,7 +8,7 @@ function NotVerifyScreen(){
         <Box flex={1} bg="#ef837b" safeAreaTop> 
         <Center w="full" h={250}>
             <Image 
-            source={require("../../assets/logoo.png")}
+            source={require("../../assets/images/logoo.png")}
             alt="logo"
             w={350}
             h={95}                                  
