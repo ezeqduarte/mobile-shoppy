@@ -7,6 +7,7 @@ import { Entypo, AntDesign, FontAwesome, FontAwesome5, MaterialCommunityIcons } 
 import { StyleSheet } from "react-native"
 import ProfileScreen from "../Screens/ProfileScreen"
 import StackNav from "./StackNav"
+import CartScreen from "../Screens/CartScreen"
 
 
 
@@ -50,7 +51,7 @@ const BottomNav = () => {
                     </Center>
                 )
             }} />
-{/* 
+
             <Tab.Screen name="Carrito" component={CartScreen} options={{
                 tabBarButton: (props) => <CustomTab {...props} />,
                 tabBarIcon: ({ focused }) => (
@@ -66,7 +67,7 @@ const BottomNav = () => {
             }} />
 
 
-*/}
+
 
 
 
