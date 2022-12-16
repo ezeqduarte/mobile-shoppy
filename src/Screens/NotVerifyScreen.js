@@ -3,7 +3,7 @@ import React from "react"
 import { Colors } from "react-native/Libraries/NewAppScreen"
 import Button1 from "../Components/Button1"
 
-function NotVerifyScreen(){
+function NotVerifyScreen({navigation}){
     return(
         <Box flex={1} bg="#ef837b" safeAreaTop> 
         <Center w="full" h={250}>
@@ -23,9 +23,15 @@ function NotVerifyScreen(){
         <VStack space={6} px={5} alignItems="center"
         >
 
-            <Button1 bg={Colors.black} color={Colors.white} >    REGISTRARSE      </Button1>
-            <Button1 bg={Colors.white} color={Colors.black} >   INICIAR SESION      </Button1>
-            <Button1 bg={Colors.black} color={Colors.white} >   HOME (INVITADO)     </Button1>
+            <Button1 bg={Colors.black} color={Colors.white} onPress={() => {
+							navigation.navigate("Register");
+						}} >    REGISTRARSE      </Button1>
+            <Button1 bg={Colors.white} color={Colors.black} onPress={() => {
+							navigation.navigate("Login");
+						}}>   INICIAR SESION      </Button1>
+            <Button1 bg={Colors.black} color={Colors.white} onPress={() => {
+							navigation.navigate("Bottom");
+						}}>   INICIO (INVITADO)     </Button1>
         </VStack>
 
 
