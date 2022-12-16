@@ -4,7 +4,7 @@ import { Colors } from "react-native/Libraries/NewAppScreen"
 
 import { Ionicons,FontAwesome,MaterialIcons } from '@expo/vector-icons';
 
-function RegisterScreen(){
+function RegisterScreen({navigation}){
     return(
         <Box flex={1} bg={Colors.black}>
         <Image
@@ -65,12 +65,20 @@ function RegisterScreen(){
 
             </VStack>
             <Button
-            _pressed={{bg: "black"}} my={30} w="40%" rounded={50} bg="#ef837b">
+            _pressed={{bg: "black"}}
+             my={30}
+              w="40%"
+               rounded={50}
+                bg="#ef837b"
+                onPress={() => navigation.navigate("Bottom")}
+                
+                >
+
                 REGISTRARSE
 
 
             </Button>
-            <Pressable mt={4}>
+            <Pressable mt={4} onPress={() => navigation.navigate("Login")}>
                 <Text color="#ef837b">    INICIAR SESION     </Text>
 
 

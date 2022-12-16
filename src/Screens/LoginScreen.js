@@ -6,7 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 
-function LoginScreen(){
+function LoginScreen({navigation}){
     return(
         <Box flex={1} bg={Colors.black}>
             <Image
@@ -57,13 +57,19 @@ function LoginScreen(){
 
                 </VStack>
                 <Button
-                _pressed={{bg: "black"}} my={30} w="40%" rounded={50} bg="#ef837b">
+                _pressed={{bg: "black"}} 
+                my={30}
+                 w="40%"
+                  rounded={50}
+                   bg="#ef837b"
+                   onPress={() => navigation.navigate("Bottom")}
+                >
                     Iniciar Sesion
 
 
                 </Button>
-                <Pressable mt={4}>
-                    <Text color="#ef837b">    REGISTARSE     </Text>
+                <Pressable mt={4}  onPress={() => navigation.navigate("Register")}>
+                    <Text color="#ef837b" >    REGISTARSE     </Text>
 
 
 

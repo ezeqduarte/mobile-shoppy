@@ -4,10 +4,10 @@
     "slug": "mobile-shoppy",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/logoo.png",
+    "icon": "./assets/images/logoo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/logoo.png",
+      "image": "./assets/images/logoo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ef837b"
     },
@@ -22,12 +22,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/logoo.png",
+        "foregroundImage": "./assets/images/logoo.png",
         "backgroundColor": "#ef837b"
       }
     },
     "web": {
-      "favicon": "./assets/logoo.png"
+      "favicon": "./assets/images/logoo.png"
     }
   }
 }
