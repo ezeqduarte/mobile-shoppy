@@ -12,6 +12,8 @@ import BottomNav from "./src/Navigations/BottomNav";
 import WelcomeScreen from "./src/Screens/WelcomeScreen";
 import PaymentScreen from "./src/Screens/PaymentScreen";
 import CartScreen from "./src/Screens/CartScreen";
+import PlaceOrderScreen from "./src/Screens/PlaceOrderScreen";
+import OrderScreen from "./src/Screens/OrderScreen";
 
 
 
@@ -23,7 +25,7 @@ export default function App() {
     <NativeBaseProvider>
       <NavigationContainer>
       <StatusBar hidden={true}/>
-      <Stack.Navigator initialRouteName="Welcome" screenOptions={{
+      <Stack.Navigator initialRouteName="Order" screenOptions={{
         headerShown:false
       }}
        >
@@ -34,7 +36,8 @@ export default function App() {
         <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="Bottom" component={BottomNav} />
         <Stack.Screen name="Carrito" component={CartScreen} />
-
+        <Stack.Screen name="PlaceOrder" component={PlaceOrderScreen} />
+        <Stack.Screen name="Order" component={OrderScreen} />
 
       </Stack.Navigator>
       </NavigationContainer>
