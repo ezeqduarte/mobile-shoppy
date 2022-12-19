@@ -11,6 +11,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import BottomNav from "./src/Navigations/BottomNav";
 import WelcomeScreen from "./src/Screens/WelcomeScreen";
 import PaymentScreen from "./src/Screens/PaymentScreen";
+import CartScreen from "./src/Screens/CartScreen";
 
 
 
@@ -32,6 +33,8 @@ export default function App() {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="Bottom" component={BottomNav} />
+        <Stack.Screen name="Carrito" component={CartScreen} />
+
 
       </Stack.Navigator>
       </NavigationContainer>

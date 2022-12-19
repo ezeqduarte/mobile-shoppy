@@ -6,7 +6,7 @@ import HomeScreen from "../Screens/HomeScreen"
 import { Entypo, AntDesign, FontAwesome, FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons"
 import { StyleSheet } from "react-native"
 import ProfileScreen from "../Screens/ProfileScreen"
-import StackNav from "./StackNav"
+import StackNav from "../Navigations/StackNav"
 import CartScreen from "../Screens/CartScreen"
 
 
@@ -58,9 +58,9 @@ const BottomNav = () => {
                     <Center>
 
                         {focused ? (
-                            <FontAwesome5 name="shopping-basket" size={24} color={Colors.white} />
+                            <FontAwesome5 name="shopping-basket" size={24} color="#ef837b" />
                         ) : (
-                            <MaterialCommunityIcons name="shopping-outline" size={24} color={Colors.white} />
+                            <MaterialCommunityIcons name="shopping-outline" size={24} color={Colors.black} />
                         )}
                     </Center>
                 )

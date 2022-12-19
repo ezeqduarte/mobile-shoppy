@@ -16,7 +16,7 @@ function Button2({ mt, bg, children, onPress }) {
       }}
       _pressed={{ bg:Colors.depGrey }}
       onPress={onPress}
-    > Comenza tu compra ahora!
+    > COMENZÁ TU COMPRA AHORA!
       {children}
     </Button>
   );

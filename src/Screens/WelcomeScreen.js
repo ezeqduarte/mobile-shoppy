@@ -33,21 +33,22 @@ return(
 						textAlign: "center",
 						padding: 10,
 						margin: 20,
+						marginBottom:2,
 						color: "#ef837b",
-                        fontSize: 37,
+                        fontSize: 35,
                         fontFamily: "sans-serif",
                         letterSpacing: 5,
                         fontWeight: 'bold',
                         textShadowColor: 'rgba(0, 0, 0, 0.75)',
-          textShadowOffset: { width: -1, height: 1 },
+          textShadowOffset: { width: -1, height:6 },
           textShadowRadius: 10,
                         
 						
 					}}
                     
-				> SHOPY TE DA LA BIENVENIDA
+				> SHOPPY TE DA LA BIENVENIDA
                 </Text>
-                <TouchableOpacity onPress={() => {
+                <TouchableOpacity    onPress={() => {
 							navigation.navigate("NotVerify");
 						}}
 					style={{
@@ -55,9 +56,11 @@ return(
 						alignItems: "center",
 						borderRadius: 20,
 						backgroundColor: "#ef837b",
-						marginHorizontal: 150,
-						
+						marginHorizontal: 130,
 						padding: 10,
+						height:40,
+						width:100,
+						
 						
 					}}
 				>
