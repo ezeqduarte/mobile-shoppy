@@ -37,14 +37,14 @@ const OrderIterm = () => {
         </Text>
     </VStack>
     <Center>
-        <Button>
-            bg={Colors.main}
-            _pressed={{bg: Colors.main}}
+        <Button bg={Colors.blue}
+            _pressed={{bg: Colors.black}}
             _text={{
                 color: Colors.white,
-            }}
+            }}>
+            5
         </Button>
-        5
+        
     </Center>
     </HStack>
 </Box>

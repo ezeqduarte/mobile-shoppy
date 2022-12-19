@@ -25,7 +25,7 @@ export default function App() {
     <NativeBaseProvider>
       <NavigationContainer>
       <StatusBar hidden={true}/>
-      <Stack.Navigator initialRouteName="Order" screenOptions={{
+      <Stack.Navigator initialRouteName="PlaceOrder" screenOptions={{
         headerShown:false
       }}
        >
