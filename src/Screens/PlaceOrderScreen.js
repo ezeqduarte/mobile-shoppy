@@ -13,7 +13,7 @@ function PlaceOrderScreen() {
         <Box bg={Colors.subGreen} flex={1} safeArea pt={6}>
             <Box>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-                    <OrderInfo title="CUSTOMER"
+                    <OrderInfo title="CLIENTE"
                      subTitle="Admin N°1"
                       text="admin@gmail.com"
                       icon={<FontAwesome name="user" size={30} color={Colors.white} />}  

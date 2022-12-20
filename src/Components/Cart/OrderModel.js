@@ -88,7 +88,7 @@ h={34}
   _pressed={{
     bg:"#ef837b"
   }}>
-PAGAR LUEGO
+SEGUIR COMPRANDO
   </Button>
 </Modal.Footer>
 </Modal.Content>

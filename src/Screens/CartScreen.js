@@ -55,7 +55,7 @@ return(
     <Button bg={Colors.black}
     color={Colors.white}
     mt={10} onPress={() => navigation.navigate("Shipping")}>
-        CHECKOUT
+        PAGOS
     </Button>
     </HStack>
 </Center>
