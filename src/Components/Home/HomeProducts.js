@@ -10,8 +10,10 @@ import {
 } from "native-base";
 import Colors from "../../data/color";
 import products from "../../data/Products";
+import { useNavigation } from "@react-navigation/native";
 
 function HomeProduct() {
+  const navigation = useNavigation()
   return (
     <ScrollView flex={1} showsVerticalScrollIndicator={false}>
       <Flex
@@ -24,7 +26,7 @@ function HomeProduct() {
         {products.map((product) => (
           <Pressable
             onPress={() => {
-              navigation.navigate("SingleProduct");
+              navigation.navigate("Single");
             }}
             key={product._id}
             w="100%"

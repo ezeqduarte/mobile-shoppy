@@ -3,6 +3,8 @@ import React from "react"
 import OrderInfo from "../Components/Cart/OrderInfo"
 import Colors from "../data/color"
 import { FontAwesome, FontAwesome5, Ionicons } from '@expo/vector-icons';
+import OrderIterm from "../Components/Cart/OrderIterm";
+import OrderModel from "../Components/Cart/OrderModel";
 
 
 //    <OrderIterms />
@@ -38,7 +40,8 @@ function OrderScreen() {
  <Box px={6} flex={1}  pb={3}>
     <Heading bold fontSize={15} isTruncated my={4}>PRODUCTOS
     </Heading>
-
+<OrderIterm />
+<OrderModel />
 
 
  </Box>

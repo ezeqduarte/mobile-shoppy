@@ -1,9 +1,10 @@
 import {View, Text, Pressable} from "react-native";
 import React from "react";
-import { Box, Center, HStack, Image, FontAwesome, VStack, Button } from "native-base";
+import { Box, Center, HStack, Image, VStack, Button } from "native-base";
 import { SwipeListView } from "react-native-swipe-list-view"; 
 import products from '../../data/Products';
 import Colors from "../../data/color";
+import {FontAwesome} from "@expo/vector-icons"
 
 const Swiper = () =>(
     <SwipeListView

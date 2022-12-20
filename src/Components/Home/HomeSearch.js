@@ -2,8 +2,10 @@ import { HStack, Input, Box, Pressable, Image,Text } from "native-base";
 import React from "react";
 import Colors from "../../data/color";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 function HomeSearch() {
+  const navigation = useNavigation()
   return (
     <Box>
       <Box bg={Colors.white} alignItems="center">
@@ -45,7 +47,7 @@ function HomeSearch() {
           color="black"
           ml={3}
            onPress={() => {
-           navigation.navigate("Login")}}
+           navigation.navigate("Carrito")}}
           
         />
         {/* <Box

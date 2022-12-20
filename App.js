@@ -25,19 +25,17 @@ export default function App() {
     <NativeBaseProvider>
       <NavigationContainer>
       <StatusBar hidden={true}/>
-      <Stack.Navigator initialRouteName="PlaceOrder" screenOptions={{
+      <Stack.Navigator initialRouteName="Welcome" screenOptions={{
         headerShown:false
       }}
        >
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="NotVerify" component={NotVerifyScreen} />
-        <Stack.Screen name="Payment" component={PaymentScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Register" component={RegisterScreen} />
-        <Stack.Screen name="Bottom" component={BottomNav} />
-        <Stack.Screen name="Carrito" component={CartScreen} />
-        <Stack.Screen name="PlaceOrder" component={PlaceOrderScreen} />
-        <Stack.Screen name="Order" component={OrderScreen} />
+         <Stack.Screen name="Register" component={RegisterScreen} />
+         <Stack.Screen name="Order" component={OrderScreen} />
+         <Stack.Screen name="Bottom" component={BottomNav} />
+       
 
       </Stack.Navigator>
       </NavigationContainer>

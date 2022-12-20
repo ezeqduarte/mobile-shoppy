@@ -14,11 +14,14 @@ import {Button, Alert} from "react-native"
 import Colors from "../data/color";
 import Review from "../Components/Home/Review"
 import NumericInput from "react-native-numeric-input";
+import { useNavigation } from "@react-navigation/native";
 // import {products} from "../data/Products";
 // import HomeProduct from "../Screens/HomeProducts"
 
-function SingleProductScreen() {
+function SingleProductScreen(route) {
   const [value, setValue] = useState(0);
+  const navigation = useNavigation()
+  const product = route.params
   return (
     <Box safeArea flex={1} bg={Colors.white}>
       <ScrollView px={5} showsVerticalScrollIndicator={false}>
@@ -57,7 +60,7 @@ function SingleProductScreen() {
           capacidad de 16 gb.
           (Tipo: DDR4)
             </Text>
-            <Button
+            <Button 
   title="Agregar al carrito"
   color="#000000"
 onPress={() => Alert.alert('Agregaste tu producto con exito!')}

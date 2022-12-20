@@ -1,7 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
-import { Center, Modal, Button, HStack, VStack, Text } from "native-base";
+import { Center, Modal, Button, HStack, VStack, Text, Pressable, Image } from "native-base";
 import React, {useState} from "react";
-import { Colors } from "react-native/Libraries/NewAppScreen";
+import Colors from "../../data/color"
 
 const OrdersInfos=[
   {
@@ -25,17 +25,17 @@ const OrdersInfos=[
     color:"main"
   }
 ]
-const PlaceOrderModel =() => {
+const OrderModel =() => {
   const navigation = useNavigation()
   const [showModel, setShowModel] = useState(false);  
   return (
       <Center>
         <Button
         onPress={() => setShowModel(true)}
-        bg={Colors.black}
+        bg="#ef837b"
         color={Colors.white}
         mt={5}
-        > Mostrar el total
+        > Mostrar el pago y total
         </Button>
         <Modal
         isOpen={showModel}
@@ -60,16 +60,35 @@ const PlaceOrderModel =() => {
   </VStack>
 </Modal.Body>
 <Modal.Footer>
-  <Button flex={1} bg={Colors.main} h={45} _text={{
+    <Pressable w="full"
+     justifyContent="center"
+      bg={Colors.paypal} 
+      h={45}
+       rounded={3}
+        overflow="hidden"
+         onPress ={
+        () => setShowModel(false) 
+    }>
+
+
+<Image source={require("../../../assets/images/paypal.png")}
+alt="paypal"
+resizeMode="contain"
+w="full"
+h={34}
+></Image>
+    </Pressable>
+  <Button w="full" mt={2} bg={Colors.black} h={45} _text={{
     color:Colors.white
   }} 
-  onPress={() =>
-    {navigation.navigate("Order");
-     setShowModel(false)}}
+  onPress={() => {
+    navigation.navigate("Home");
+
+    setShowModel(false)}}
   _pressed={{
-    bg:Colors.nmain
+    bg:"#ef837b"
   }}>
-HACER  MI PEDIDO
+PAGAR LUEGO
   </Button>
 </Modal.Footer>
 </Modal.Content>
@@ -78,4 +97,4 @@ HACER  MI PEDIDO
     );
   }
 
-  export default PlaceOrderModel;
+  export default OrderModel;

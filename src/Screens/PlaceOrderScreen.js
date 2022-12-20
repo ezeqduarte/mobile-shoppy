@@ -4,6 +4,7 @@ import OrderInfo from "../Components/Cart/OrderInfo"
 import Colors from "../data/color"
 import { FontAwesome, FontAwesome5, Ionicons } from '@expo/vector-icons';
 import OrderIterm from "../Components/Cart/OrderIterm";
+import PlaceOrderModel from "../Components/Cart/PlaceOrderModel";
 
 
 //    <OrderIterms />
@@ -41,6 +42,7 @@ function PlaceOrderScreen() {
     <Heading bold fontSize={15} isTruncated my={4}>PRODUCTOS
     </Heading>
     <OrderIterm />
+    <PlaceOrderModel />
 
 
 

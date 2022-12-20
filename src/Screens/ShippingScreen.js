@@ -78,7 +78,7 @@ DIRECCION DE ENTREGA
        
 
 
-       <Button1  bg="#ef837b" color={Colors.white} mt={5} >
+       <Button1 onPress={() => navigation.navigate("Checkout")}  bg="#ef837b" color={Colors.white} mt={5} >
                         CONTINUAR
                     </Button1>
     </VStack>
