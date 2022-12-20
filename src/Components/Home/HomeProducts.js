@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   Flex,
   ScrollView,
@@ -12,8 +12,23 @@ import Colors from "../../data/color";
 import products from "../../data/Products";
 import { useNavigation } from "@react-navigation/native";
 
+import axios from "axios";
+import React, {useEffect, useState} from 'react'
+import {useSelector, useDispatch} from 'react-redux'
+import productsActions from "../../redux/actions/productsActions";
+import API from "../../api";
+
+const { productos, productosFiltrados } = productsActions;
 function HomeProduct() {
   const navigation = useNavigation()
+
+  let { TodosLosproductos } = useSelector((store) => store.productsReducer);
+  let { productosFiltradosArray } = useSelector(
+    (store) => store.productsReducer
+  );
+
+
+
   return (
     <ScrollView flex={1} showsVerticalScrollIndicator={false}>
       <Flex

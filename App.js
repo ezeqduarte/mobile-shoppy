@@ -14,6 +14,8 @@ import PaymentScreen from "./src/Screens/PaymentScreen";
 import CartScreen from "./src/Screens/CartScreen";
 import PlaceOrderScreen from "./src/Screens/PlaceOrderScreen";
 import OrderScreen from "./src/Screens/OrderScreen";
+import { Provider } from "react-redux";
+import { store } from "./src/redux/store";
 
 
 
@@ -22,6 +24,7 @@ const Stack = createNativeStackNavigator()
 
 export default function App() {
   return (
+    <Provider store={store}>
     <NativeBaseProvider>
       <NavigationContainer>
       <StatusBar hidden={true}/>
@@ -40,5 +43,6 @@ export default function App() {
       </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>
+    </Provider>
   );
 }
