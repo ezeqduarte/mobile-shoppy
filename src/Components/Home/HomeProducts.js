@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import {
   Flex,
   ScrollView,
@@ -11,9 +11,20 @@ import {
 import Colors from "../../data/color";
 import products from "../../data/Products";
 import { useNavigation } from "@react-navigation/native";
+import Productos from "../../data/Productos";
+
 
 function HomeProduct() {
   const navigation = useNavigation()
+
+
+
+  
+
+
+
+
+
   return (
     <ScrollView flex={1} showsVerticalScrollIndicator={false}>
       <Flex
@@ -23,7 +34,7 @@ function HomeProduct() {
         px={6}
         bg={Colors.white}
       >
-        {products.map((product) => (
+        {Productos.map((product) => (
           <Pressable
             onPress={() => {
               navigation.navigate("Single");

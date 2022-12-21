@@ -50,7 +50,7 @@ return(
 					</Text>
 				</TouchableOpacity>
                 <TouchableOpacity    onPress={() => {
-							navigation.navigate("NotVerify");
+							navigation.navigate("PapaNoelScreen");
 						}}
 					style={{
 						alignItems: "center",

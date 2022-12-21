@@ -6,6 +6,7 @@ import ShippingScreen from "../Screens/ShippingScreen";
 import SingleProductScreen from "../Screens/SingleProductScreen";
 import PaymentScreen from "../Screens/PaymentScreen";
 import PlaceOrderScreen from "../Screens/PlaceOrderScreen";
+import PapaNoel from "../Screens/PapaNoel";
 
 
 
@@ -22,7 +23,7 @@ const StackNav = () => {
 <Stack.Screen name="Shipping" component={ShippingScreen} />
 <Stack.Screen name="Checkout" component={PaymentScreen} />
 <Stack.Screen name="PlaceOrder" component={PlaceOrderScreen} />
-
+<Stack.Screen name="PapaNoelScreen" component={PapaNoel} />
            </Stack.Navigator>
 
 

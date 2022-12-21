@@ -16,6 +16,7 @@ import CartScreen from "./src/Screens/CartScreen";
 import PlaceOrderScreen from "./src/Screens/PlaceOrderScreen";
 import OrderScreen from "./src/Screens/OrderScreen";
 import { ThemeProvider } from "styled-components";
+import PapaNoel from "./src/Screens/PapaNoel";
 
 const Stack = createNativeStackNavigator()
 
@@ -30,11 +31,13 @@ export default function App() {
        >
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="Christmas" component={ChristmasScreen} />
+        <Stack.Screen name="PapaNoelScreen" component={PapaNoel} />
         <Stack.Screen name="NotVerify" component={NotVerifyScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
          <Stack.Screen name="Register" component={RegisterScreen} />
          <Stack.Screen name="Order" component={OrderScreen} />
          <Stack.Screen name="Bottom" component={BottomNav} />
+
        
 
       </Stack.Navigator>
