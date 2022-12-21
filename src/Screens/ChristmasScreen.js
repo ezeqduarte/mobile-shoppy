@@ -12,15 +12,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function ChristmasScreen({ navigation }) {
 
 const image = { 
-    uri: "https://media.discordapp.net/attachments/830354293822324736/1053650918874292234/Sin_titulo-1.jpg?width=224&height=473"
+    uri: "blob:https://web.whatsapp.com/5c40021b-f088-4521-b29c-3364bd2345b6"
 } 
 
 return(
 <View style={styles.container}>
 <ImageBackground
                 width={30}
-				source={image}
-				resizeMode="contain"
+				source={require("../../assets/images/bgnavidad.jpg")}
+				
+				resizeMode="cover"
 				style={styles.image}
 			>
                 <TouchableOpacity    onPress={() => {

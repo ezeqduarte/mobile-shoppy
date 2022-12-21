@@ -15,6 +15,7 @@ import PaymentScreen from "./src/Screens/PaymentScreen";
 import CartScreen from "./src/Screens/CartScreen";
 import PlaceOrderScreen from "./src/Screens/PlaceOrderScreen";
 import OrderScreen from "./src/Screens/OrderScreen";
+import { ThemeProvider } from "styled-components";
 
 const Stack = createNativeStackNavigator()
 
