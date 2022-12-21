@@ -7,9 +7,9 @@
     "icon": "./assets/images/logoo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/logoo.png",
+      "image": "https://www.canva.com/design/DAFVWnPbKKg/wNqOScJNGXlZQYte8-3sfA/view?_branch_match_id=1124865918849593257&utm_source=Links&utm_medium=Share&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07MK0vUy03V9w4xdTQxK3UJK0sCAIocYp0cAAAA",
       "resizeMode": "contain",
-      "backgroundColor": "#ef837b"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

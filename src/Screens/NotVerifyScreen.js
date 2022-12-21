@@ -32,7 +32,7 @@ function NotVerifyScreen({navigation}){
 						}} >    REGISTRARSE      </Button1>
             <Button1 bg={Colors.black} color={Colors.white} onPress={() => {
 							navigation.navigate("Bottom");
-						}}>   INICIAR COMO INVITADO    </Button1>
+						}}>   INGRESAR COMO INVITADO    </Button1>
         </VStack>
 
         </Box>

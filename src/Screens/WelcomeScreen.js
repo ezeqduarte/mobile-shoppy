@@ -6,23 +6,19 @@ import {
     TouchableOpacity
 } from "react-native";
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import { useNavigation } from "@react-navigation/native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
-
-
-
-
-function WelcomeScreen({ navigation }) {
-
+function WelcomeScreen( ) {
+const navigation = useNavigation()
 const image = { 
     uri: "https://cdn.discordapp.com/attachments/769400725977038868/1051728561066754068/61b4c8990185a_1.jpg"
-
 } 
 
 return(
+
 <View style={styles.container}>
+	
 <ImageBackground
 				source={image}
 				resizeMode="cover"
@@ -34,7 +30,7 @@ return(
 						padding: 10,
 						margin: 20,
 						marginBottom:2,
-						color: "#ef837b",
+						color: "black",
                         fontSize: 35,
                         fontFamily: "sans-serif",
                         letterSpacing: 5,
@@ -49,43 +45,31 @@ return(
 				> SHOPPY TE DA LA BIENVENIDA
                 </Text>
                 <TouchableOpacity    onPress={() => {
-							navigation.navigate("NotVerify");
+							navigation.navigate("Christmas");
 						}}
 					style={{
 						
 						alignItems: "center",
-						borderRadius: 20,
-						backgroundColor: "#ef837b",
+						borderRadius: 90,
+						borderBottomColor:"red",
+						backgroundColor: "black",
 						marginHorizontal: 130,
 						padding: 10,
 						height:40,
 						width:100,
-						
-						
 					}}
 				>
 					<Text 
-						
 						style={{
 							textAlign: "center",
-							color: "#f5f5f5",
+							color: "white",
 						}}
 					>
 						INGRESAR
 					</Text>
-
-
-					
 				</TouchableOpacity>
-
-
-
-
 </ImageBackground>
 </View>
-
-
-
 )
 
 }

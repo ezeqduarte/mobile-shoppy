@@ -45,7 +45,7 @@ function HomeProduct() {
             }}
             key={product._id}
             w="100%"
-            bg={Colors.white}
+            bg={Colors.black}
             rounded="md"
             shadow={9}
             pt={0.3}
@@ -63,7 +63,7 @@ function HomeProduct() {
             />
             <Box px={4} pt={1}>
               <Text
-                style={{ color: "black" }}
+                style={{ color: "white" }}
                 fontSize={18}
                 isTruncated
                 w="full"

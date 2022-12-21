@@ -10,15 +10,14 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import BottomNav from "./src/Navigations/BottomNav";
 import WelcomeScreen from "./src/Screens/WelcomeScreen";
+import ChristmasScreen from "./src/Screens/ChristmasScreen";
 import PaymentScreen from "./src/Screens/PaymentScreen";
 import CartScreen from "./src/Screens/CartScreen";
 import PlaceOrderScreen from "./src/Screens/PlaceOrderScreen";
 import OrderScreen from "./src/Screens/OrderScreen";
 import { Provider } from "react-redux";
 import { store } from "./src/redux/store";
-
-
-
+import PapaNoel from "./src/Screens/PapaNoel";
 
 const Stack = createNativeStackNavigator()
 
@@ -33,6 +32,8 @@ export default function App() {
       }}
        >
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
+        <Stack.Screen name="Christmas" component={ChristmasScreen} />
+        <Stack.Screen name="PapaNoelScreen" component={PapaNoel} />
         <Stack.Screen name="NotVerify" component={NotVerifyScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
          <Stack.Screen name="Register" component={RegisterScreen} />

@@ -32,7 +32,7 @@ const OrderModel =() => {
       <Center>
         <Button
         onPress={() => setShowModel(true)}
-        bg="#ef837b"
+        bg="black"
         color={Colors.white}
         mt={5}
         > Mostrar el pago y total
@@ -88,7 +88,7 @@ h={34}
   _pressed={{
     bg:"#ef837b"
   }}>
-PAGAR LUEGO
+SEGUIR COMPRANDO
   </Button>
 </Modal.Footer>
 </Modal.Content>

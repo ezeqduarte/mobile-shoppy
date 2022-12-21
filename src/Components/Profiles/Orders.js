@@ -1,7 +1,7 @@
 import { View, Text} from "react-native"
 import React from "react"
 import { Box, Button, HStack, Pressable, ScrollView } from "native-base"
-import { Colors } from "react-native/Libraries/NewAppScreen"
+import Colors from "../../data/color"
 
 
 const Orders = () =>{
@@ -9,7 +9,7 @@ const Orders = () =>{
         <Box h="full" bg={Colors.white} pt={5}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Pressable>
-                    <HStack space={4} justifyContent="space-between" alignItems="center" bg={Colors.deepGray} py={5} px={2} >
+                    <HStack space={4} justifyContent="space-between" alignItems="center" bg={Colors.lightBlack} py={5} px={2} >
 
 
 
@@ -19,7 +19,7 @@ const Orders = () =>{
 
 
 </Text>
-<Text fontSize={12} bold color={Colors.black}    isTruncated>PAGADO                
+<Text fontSize={12} bold color={Colors.black}    isTruncated>PAGO                
 
 
 </Text>
@@ -28,7 +28,7 @@ const Orders = () =>{
 
 </Text>
 
-<Button px={7} py={1.5} rounded={50} bg="#ef837b" _text={{
+<Button px={7} py={1.5} rounded={50} bg="black" _text={{
     color:Colors.white
 }}
 
@@ -41,7 +41,7 @@ _pressed={{
                     </HStack>
                 </Pressable>
                 <Pressable>
-                    <HStack space={4} justifyContent="space-between" alignItems="center" bg={Colors.deepGray} py={5} px={2} >
+                    <HStack space={4} justifyContent="space-between" alignItems="center" bg={Colors.lightBlack} py={5} px={2} >
 
 
 
@@ -51,7 +51,7 @@ _pressed={{
 
 
 </Text>
-<Text fontSize={12} bold color={Colors.black}    isTruncated>NO PAGADO                
+<Text fontSize={12} bold color={Colors.black}    isTruncated>ADEUDA PAGO                
 
 
 </Text>

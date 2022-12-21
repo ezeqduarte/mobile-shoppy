@@ -30,7 +30,7 @@ const paymentsMethodes = [
 function PaymentScreen() {
     const navigation = useNavigation()
     return (
-        <Box flex={1} safeAreaTop bg="#ef837b" py={5}>
+        <Box flex={1} safeAreaTop bg="black" py={5}>
             <Center pb={15}>
                 <Text color={Colors.white} fontSize={14} bold>
                     METODO DE PAGO
@@ -95,7 +95,7 @@ function PaymentScreen() {
 
 
 
-                        <Button1 onPress={() => navigation.navigate("PlaceOrder")} bg="#ef837b" color={Colors.white} mt={5} >
+                        <Button1 onPress={() => navigation.navigate("PlaceOrder")} bg="black" color={Colors.white} mt={5} >
                             CONTINUAR
                         </Button1>
                         <Text italic textAlign="center" >
