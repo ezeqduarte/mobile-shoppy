@@ -1,7 +1,7 @@
 import { View, Text} from "react-native"
 import React from "react"
 import { Box, FormControl, Input, ScrollView, VStack } from "native-base"
-import { Colors } from "react-native/Libraries/NewAppScreen"
+import Colors from "../../data/color"
 import Button1 from "../Button1"
 
 
@@ -48,17 +48,17 @@ const Profile = () =>{
 
                         </FormControl.Label>
                         <Input borderWidth={0.5}
-                         bg="#fbe3e3" 
+                         bg={Colors.lightBlack} 
                          py={4} 
                          type={i.type} 
-                         color="#ef837b"
+                         color="black"
                           fontSize={15} 
                           _focus={{bg: "#fbe3e3", borderColor: "#ef837b", 
                     borderWidth:1}} />     
                     </FormControl>  
                         ))
                     }
-                    <Button1 bg="#ef837b" color={Colors.white}  >
+                    <Button1 bg="black" color={Colors.white}  >
                         ACTUALIZAR PERFIL
                     </Button1>
                 </VStack>

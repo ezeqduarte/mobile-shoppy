@@ -1,13 +1,13 @@
 import { Box, Button, Center, FlatList, HStack, Image, Pressable, Text, VStack, } from "native-base";
 import React from "react";
-import products from '../../data/Products';
+import Productos from '../../data/Productos';
 import Colors from "../../data/color";
 
 const OrderIterm = () => {
     return (
         <FlatList 
         showsVerticalScrollIndicator={false}
-        data={products.slice(0,3)}
+        data={Productos.slice(0,3)}
         keyExtractor={(item) => item._id}
         renderItem={({ item }) => (
 <Pressable>
@@ -42,7 +42,7 @@ const OrderIterm = () => {
             _text={{
                 color: Colors.white,
             }}>
-            5
+            2
         </Button>
         
     </Center>

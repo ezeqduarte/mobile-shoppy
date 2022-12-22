@@ -2,7 +2,7 @@ import {View, Text, Pressable} from "react-native";
 import React from "react";
 import { Box, Center, HStack, Image, VStack, Button } from "native-base";
 import { SwipeListView } from "react-native-swipe-list-view"; 
-import products from '../../data/Products';
+import Productos from '../../data/Productos';
 import Colors from "../../data/color";
 import {FontAwesome} from "@expo/vector-icons"
 
@@ -12,7 +12,7 @@ const Swiper = () =>(
     previewRowKey="0"
     previewOpenValue={-40}
     previewOpenDelay={3000}
-    data={products.slice(0,2)}
+    data={Productos.slice(0,2)}
     renderItem={renderitem}
     renderHiddenItem={hiddenItem}
     showsVerticalScrollIndicator={false}
@@ -56,7 +56,7 @@ bold fontSize={14}>
             color: Colors.white,
         }}
         >
-        5
+        2
     </Button>
 </Center>
 </HStack>

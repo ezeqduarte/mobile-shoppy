@@ -43,7 +43,7 @@ function SingleProductScreen(route) {
             iconSize={35}
             step={1}
             maxValue={95}
-            minValue={0}
+            minValue={1}
             borderColor={Colors.black}
             rounded
             textColor={Colors.black}

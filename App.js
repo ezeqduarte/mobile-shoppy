@@ -17,7 +17,7 @@ import PaymentScreen from "./src/Screens/PaymentScreen";
 import CartScreen from "./src/Screens/CartScreen";
 import PlaceOrderScreen from "./src/Screens/PlaceOrderScreen";
 import OrderScreen from "./src/Screens/OrderScreen";
-
+import PapaNoel from "./src/Screens/PapaNoel";
 
 const Stack = createNativeStackNavigator()
 
@@ -33,6 +33,7 @@ export default function App() {
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="Christmas" component={ChristmasScreen} />
         <Stack.Screen name="PapaNoel" component={PapaNoelScreen} />
+        {/* <Stack.Screen name="PapaNoelScreen" component={PapaNoelScreen } /> */}
         <Stack.Screen name="NotVerify" component={NotVerifyScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
          <Stack.Screen name="Register" component={RegisterScreen} />
