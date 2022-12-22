@@ -36,9 +36,7 @@ return(
                         textShadowColor: 'rgba(0, 0, 0, 0.75)',
           textShadowOffset: { width: -1, height:6 },
           textShadowRadius: 10,
-                        
-						
-					}}
+}}
                     
 				> SHOPPY TE DA LA BIENVENIDA
                 </Text>
@@ -69,7 +67,6 @@ return(
 </ImageBackground>
 </View>
 )
-
 }
 
 export default WelcomeScreen;

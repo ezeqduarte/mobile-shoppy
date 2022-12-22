@@ -20,7 +20,6 @@ return(
 <ImageBackground
                 width={30}
 				source={require("../../assets/images/bgnavidad.jpg")}
-				
 				resizeMode="cover"
 				style={styles.image}
 			>
@@ -32,8 +31,8 @@ return(
 						borderRadius: 20,
 						backgroundColor: "red",
 						marginHorizontal: 84,
-                        marginTop:40,
-                        marginBottom:340,
+                        marginTop:20,
+                        marginBottom:380,
 						padding:11,
 						height:65,
 						width:190,
@@ -50,7 +49,7 @@ return(
 					</Text>
 				</TouchableOpacity>
                 <TouchableOpacity    onPress={() => {
-							navigation.navigate("NotVerify");
+							navigation.navigate("PapaNoel");
 						}}
 					style={{
 						alignItems: "center",

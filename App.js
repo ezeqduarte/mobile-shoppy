@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import { NativeBaseProvider, Box, Text, StatusBar} from "native-base"
 import LoginScreen from './src/Screens/LoginScreen';
 import RegisterScreen from './src/Screens/RegisterScreen';
@@ -11,11 +12,12 @@ import { NavigationContainer } from "@react-navigation/native";
 import BottomNav from "./src/Navigations/BottomNav";
 import WelcomeScreen from "./src/Screens/WelcomeScreen";
 import ChristmasScreen from "./src/Screens/ChristmasScreen";
+import PapaNoelScreen from "./src/Screens/PapaNoelScreen";
 import PaymentScreen from "./src/Screens/PaymentScreen";
 import CartScreen from "./src/Screens/CartScreen";
 import PlaceOrderScreen from "./src/Screens/PlaceOrderScreen";
 import OrderScreen from "./src/Screens/OrderScreen";
-import { ThemeProvider } from "styled-components";
+
 
 const Stack = createNativeStackNavigator()
 
@@ -30,15 +32,14 @@ export default function App() {
        >
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="Christmas" component={ChristmasScreen} />
+        <Stack.Screen name="PapaNoel" component={PapaNoelScreen} />
         <Stack.Screen name="NotVerify" component={NotVerifyScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
          <Stack.Screen name="Register" component={RegisterScreen} />
          <Stack.Screen name="Order" component={OrderScreen} />
          <Stack.Screen name="Bottom" component={BottomNav} />
-       
-
       </Stack.Navigator>
       </NavigationContainer>
-    </NativeBaseProvider>
-  );
+      </NativeBaseProvider>
+      );
 }
