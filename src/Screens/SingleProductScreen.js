@@ -52,7 +52,7 @@ function SingleProductScreen(route) {
             leftButtonBackgroundColor={Colors.main}
           />
         <Spacer/>
-            <Heading bold color={Colors.black} fontSize={32}>$23500  {* NumericInput}</Heading>
+            <Heading bold color={Colors.black} fontSize={32}>$23500</Heading>
         </HStack>
         <Text lineHeight={29} fontSize={19} mb={9}>
           Descripción: 

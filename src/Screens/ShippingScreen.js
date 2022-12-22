@@ -13,6 +13,9 @@ import React from "react";
 import Colors from "../data/color";
 import Button1 from "../Components/Button1";
 
+
+
+
 const ShippingInputs = [
   {
     label: "PROVINCIA",
@@ -43,7 +46,7 @@ const ShippingInputs = [
 function ShippingScreen() {
   const navigation = useNavigation();
   return (
-    <Box flex={1} safeAreaTop bg="#ef837b" py={5}>
+    <Box flex={1} safeAreaTop bg="black" py={5}>
       <Center pb={15}>
         <Text color={Colors.white} fontSize={14} bold>
           DIRECCION DE ENTREGA
@@ -56,7 +59,7 @@ function ShippingScreen() {
               <FormControl key={index}>
                 <FormControl.Label
                   _text={{
-                    fontSize: "12px",
+                    fontSize: "14px",
                     fontWeight: "bold",
                   }}
                 >
@@ -65,12 +68,12 @@ function ShippingScreen() {
                 <Input
                   borderWidth={0.2}
                   borderColor="#ef837b"
-                  bg="#fbe3e3"
+                  bg={Colors.lightBlack}
                   py={4}
                   type={i.type}
-                  color="#ef837b"
+                  color="black"
                   _focus={{
-                    bg: "#fbe3e3",
+                    bg: "lightBlack",
                     borderColor: "#ef837b",
                     borderWidth: 1,
                   }}
@@ -80,9 +83,9 @@ function ShippingScreen() {
 
             <Button1
               onPress={() => navigation.navigate("Checkout")}
-              bg="#ef837b"
+              bg="black"
               color={Colors.white}
-              mt={5}
+              
             >
               CONTINUAR
             </Button1>
@@ -94,3 +97,5 @@ function ShippingScreen() {
 }
 
 export default ShippingScreen;
+
+
