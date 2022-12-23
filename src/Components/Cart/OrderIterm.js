@@ -7,7 +7,7 @@ const OrderIterm = () => {
     return (
         <FlatList 
         showsVerticalScrollIndicator={false}
-        data={Productos.slice(0,3)}
+        data={Productos.slice(0,1)}
         keyExtractor={(item) => item._id}
         renderItem={({ item }) => (
 <Pressable>
@@ -42,7 +42,7 @@ const OrderIterm = () => {
             _text={{
                 color: Colors.white,
             }}>
-            2
+            1
         </Button>
         
     </Center>

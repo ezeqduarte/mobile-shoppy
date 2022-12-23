@@ -59,8 +59,9 @@ function PapaNoelScreen({navigation}) {
           <Button
             w="3"
             h="2"
+            mt="10"
             title="Ingresar a la pagina principal"
-            color="red"
+            color="black"
             onPress={() => {
               navigation.navigate("NotVerify");
             }}

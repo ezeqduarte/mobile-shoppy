@@ -13,9 +13,6 @@ import React from "react";
 import Colors from "../data/color";
 import Button1 from "../Components/Button1";
 
-
-
-
 const ShippingInputs = [
   {
     label: "PROVINCIA",
@@ -82,10 +79,12 @@ function ShippingScreen() {
             ))}
 
             <Button1
-              onPress={() => navigation.navigate("Checkout")}
+            mb="30"
               bg="black"
               color={Colors.white}
-              
+              onPress={() => navigation.navigate("Checkout")}
+              _pressed={{
+                bg:Colors.lightBlack}}
             >
               CONTINUAR
             </Button1>
@@ -97,5 +96,3 @@ function ShippingScreen() {
 }
 
 export default ShippingScreen;
-
-

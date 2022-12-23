@@ -1,98 +1,93 @@
-import {View, Text, Pressable} from "react-native";
+import { View, Text, Pressable } from "react-native";
 import React from "react";
 import { Box, Center, HStack, Image, VStack, Button } from "native-base";
-import { SwipeListView } from "react-native-swipe-list-view"; 
-import Productos from '../../data/Productos';
+import { SwipeListView } from "react-native-swipe-list-view";
+import Productos from "../../data/Productos";
 import Colors from "../../data/color";
-import {FontAwesome} from "@expo/vector-icons"
+import { FontAwesome } from "@expo/vector-icons";
 
-const Swiper = () =>(
-    <SwipeListView
+const Swiper = () => (
+  <SwipeListView
     rightOpenValue={-50}
     previewRowKey="0"
     previewOpenValue={-40}
     previewOpenDelay={3000}
-    data={Productos.slice(0,2)}
+    data={Productos.slice(0, 1)}
     renderItem={renderitem}
     renderHiddenItem={hiddenItem}
     showsVerticalScrollIndicator={false}
-    />
+  />
 );
 
 //Cart Item
 const renderitem = (data) => (
-    <Pressable>
-        <Box ml={6} mb={3}>
-        <HStack
+  <Pressable>
+    <Box ml={6} mb={3}>
+      <HStack
         alignItems="center"
         gb={Colors.white}
         shadow={1}
-        rounded={10}
+        rounded={5}
         overflow="hidden"
-        >
-<Center w="25%"
- bg={Colors.deepGray}>
-    <Image source={{uri:data.item.image }}
-    alt={data.item.name}
-    w="full"
-    h={24}
-    resizeMode="contain"
-    />
-</Center>
-<VStack w='60%' px={2} space={2}>
-<Text isTruncated color={Colors.black} 
-bold fontSize={14}>
-    {data.item.name}
-</Text>
-<Text bold color={Colors.lightBlack}>
-    ${data.item.price}
-    </Text>
-</VStack>
-<Center>
-    <Button
-        bg={Colors.black}
-        _pressed={{bg: Colors.red}}
-        _text={{
-            color: Colors.white,
-        }}
-        >
-        2
-    </Button>
-</Center>
-</HStack>
-</Box>
-</Pressable>
+      >
+        <Center w="25%" bg={Colors.black}>
+          <Image
+            source={{ uri: data.item.image }}
+            alt={data.item.name}
+            w="full"
+            h={24}
+            resizeMode="contain"
+          />
+        </Center>
+        <VStack w="60%" px={2} space={2}>
+          <Text isTruncated color={Colors.black} bold fontSize={12}>
+            {data.item.name}
+          </Text>
+          <Text bold color={Colors.lightBlack}>
+            ${data.item.price}
+          </Text>
+        </VStack>
+        <Center>
+          <Button
+            bg={Colors.black}
+            _pressed={{ bg: Colors.red }}
+            _text={{
+              color: Colors.white,
+            }}
+          >
+            1
+          </Button>
+        </Center>
+      </HStack>
+    </Box>
+  </Pressable>
 );
- 
-{/* //hidden */}
+
+{
+  /* //hidden */
+}
 const hiddenItem = () => {
- <Pressable
+  <Pressable
     w={50}
     roundedTopRight={10}
     roundedBottomRight={10}
-    h='88%'
-    ml='auto'
+    h="88%"
+    ml="auto"
     justifyContent="center"
     bg={Colors.red}
-    >
-    <Center
-    alignItems="center"
-    space={2}>
-<FontAwesome 
-        name="trash"
-        size={24}
-        color={Colors.white}
-        />
+  >
+    <Center alignItems="center" space={2}>
+      <FontAwesome name="trash" size={24} color={Colors.white} />
     </Center>
-    </Pressable>
+  </Pressable>;
 };
 
 const CartIterms = () => {
-return (
-<Box mr={6}>
-<Swiper/>
-</Box>
-);
+  return (
+    <Box mr={6}>
+      <Swiper />
+    </Box>
+  );
 };
 
 export default CartIterms;

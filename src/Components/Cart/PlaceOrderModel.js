@@ -6,32 +6,35 @@ import { Colors } from "react-native/Libraries/NewAppScreen";
 const OrdersInfos=[
   {
     tittle:"Productos",
-    price:125.77,
+    price:"23,500",
     color:"black"
   },
   {
     tittle:"Envio",
-    price:34.77,
+    price:"34",
     color:"black"
   },
   {
     tittle:"Impuestos",
-    price:23.34,
+    price:"23",
     color:"black"
   },
   {
     tittle:"Cuenta Total",
-    price:3458.00,
+    price:"23,557",
     color:"main"
   }
 ]
 const PlaceOrderModel =() => {
+
   const navigation = useNavigation()
   const [showModel, setShowModel] = useState(false);  
   return (
-      <Center>
+      <Center >
         <Button
         onPress={() => setShowModel(true)}
+        _pressed={{
+          bg:Colors.red}}
         bg={Colors.black}
         color={Colors.white}
         mt={5}
@@ -60,14 +63,14 @@ const PlaceOrderModel =() => {
   </VStack>
 </Modal.Body>
 <Modal.Footer>
-  <Button flex={1} bg={Colors.main} h={45} _text={{
+  <Button flex={1} bg={Colors.black} h={45} _text={{
     color:Colors.white
   }} 
   onPress={() =>
     {navigation.navigate("Order");
      setShowModel(false)}}
   _pressed={{
-    bg:Colors.nmain
+    bg:Colors.black
   }}>
 HACER  MI PEDIDO
   </Button>

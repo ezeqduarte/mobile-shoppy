@@ -6,22 +6,22 @@ import Colors from "../../data/color"
 const OrdersInfos=[
   {
     tittle:"Productos",
-    price:125.77,
+    price:"25,500",
     color:"black"
   },
   {
     tittle:"Envio",
-    price:34.77,
+    price:34,
     color:"black"
   },
   {
     tittle:"Impuestos",
-    price:23.34,
+    price:23,
     color:"black"
   },
   {
     tittle:"Cuenta Total",
-    price:3458.00,
+    price:"25,557",
     color:"main"
   }
 ]
@@ -32,7 +32,9 @@ const OrderModel =() => {
       <Center>
         <Button
         onPress={() => setShowModel(true)}
-        bg="#ef837b"
+        _pressed={{
+          bg:Colors.black}}
+        bg="black"
         color={Colors.white}
         mt={5}
         > Mostrar el pago y total
@@ -62,7 +64,7 @@ const OrderModel =() => {
 <Modal.Footer>
     <Pressable w="full"
      justifyContent="center"
-      bg={Colors.paypal} 
+      bg={Colors.mercadoPago} 
       h={45}
        rounded={3}
         overflow="hidden"
@@ -71,8 +73,8 @@ const OrderModel =() => {
     }>
 
 
-<Image source={require("../../../assets/images/paypal.png")}
-alt="paypal"
+<Image source={require("../../../assets/images/mercadopago.png")}
+alt="mercadopago"
 resizeMode="contain"
 w="full"
 h={34}
@@ -86,7 +88,7 @@ h={34}
 
     setShowModel(false)}}
   _pressed={{
-    bg:"#ef837b"
+    bg:"lightBlack"
   }}>
 SEGUIR COMPRANDO
   </Button>

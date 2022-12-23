@@ -56,7 +56,7 @@ return(
 						borderRadius: 20,
 						backgroundColor: "red",
 						marginHorizontal: 84,
-                        marginTop:20,
+                        marginTop:50,
 						padding: 10,
 						height:65,
 						width:190,
